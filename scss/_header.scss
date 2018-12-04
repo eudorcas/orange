@@ -1,0 +1,71 @@
+@import 'variables';
+
+.page__header {
+  background-image: url("../img/banner.jpg");
+  height: 740px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  h1 {
+    font-size: 200px;
+    font-family: $font-first;
+    font-weight: 400;
+  }
+  p {
+    font-size: 18px;
+    font-family: $font-second;
+    font-weight: 400;
+  }
+
+}
+
+.page__navigation {
+  font-family: $font-second;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+
+}
+
+.navigation__menu {
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu__element {
+  padding: 40px 30px 30px 30px;
+  list-style: none;
+  margin: 10px;
+  a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    position:relative;
+    &:after{
+      position:absolute;
+      content: '';
+      width: 0;
+      visibility: hidden;
+      border: 1px solid #fff;
+      bottom: -5px;
+      left: 0;
+      transition: 0.3s;
+    }
+    &:hover:after {
+      width: 100%;
+      visibility: visible;
+    }
+  }
+
+}
+
+
+
+
