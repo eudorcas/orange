@@ -1,16 +1,8 @@
-@import 'header';
-@import 'variables';
+@import 'modules/general';
+@import 'modules/variables';
+@import 'modules/grid';
+@import 'modules/reset';
+@import 'partials/section1';
+@import 'partials/header';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.container {
-  max-width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
