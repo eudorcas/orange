@@ -1,3 +1,33 @@
+@import 'variables';
+
 * {
   box-sizing: border-box;
+}
+.page__content {
+  position: relative;
+  .page__media-links {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    a {
+      padding: 5px;
+    }
+    img {
+      width: 45px;
+      height: 45px;
+      display: block;
+    }
+  }
+  &-header {
+    font-family: $font-first;
+    font-size: 40px;
+    margin: 30px 0;
+    letter-spacing: 1px;
+
+  }
+  p {
+    font-family: $font-second;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

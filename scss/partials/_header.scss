@@ -4,6 +4,7 @@
   background-image: url("../img/banner.jpg");
   height: 740px;
   width: 100%;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -12,6 +13,7 @@
   align-items: center;
   color: $color1;
   position: relative;
+  margin-bottom: 40px;
   h1 {
     font-size: 200px;
     font-family: $font-first;

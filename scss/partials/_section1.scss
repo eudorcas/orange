@@ -1,98 +1,74 @@
-.page__content {
-  position: relative;
-  .page__media-links {
-    position: absolute;
-    left: 0;
-    top: 150px;
-    a {
-      padding: 5px;
+.page__info {
+
+  &-article {
+    h3 {
+      margin-top: 0;
     }
-    img {
-      width: 45px;
-      height: 45px;
-      display: block;
+    p {
+      margin: 40px 0;
+
     }
   }
-  &-header {
+  &-skills {
     font-family: $font-first;
-    font-size: 40px;
-    margin: 30px 0;
-    letter-spacing: 1px;
-
-  }
-  .page__info {
-
-    &-article {
-      h3 {
-        margin-top: 0;
-      }
-      p {
-        margin: 40px 0;
-        font-family: $font-second;
-        font-size: 14px;
-        line-height: 20px;
-      }
-    }
-    &-skills {
-      font-family: $font-first;
-      font-size: 15px;
-      .skills-list {
-        margin-bottom: 30px;
-        .list-element {
-          padding: 15px 0;
-          position: relative;
-          &:after {
-            content: '';
-            width: 80%;
-            border: 1px solid $color4;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-          }
-        }
-      }
-      a {
-        color: $color3;
-        font-family: $font-second;
-      }
-    }
-    &-photo {
-      height: 100%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      flex-direction: column;
-
-      .author-photo {
-        width: 400px;
-        height: 500px;
+    font-size: 15px;
+    .skills-list {
+      margin-bottom: 30px;
+      .list-element {
+        padding: 15px 0;
         position: relative;
         &:after {
           content: '';
-          background-image: url("../img/cross.svg");
-          background-size: contain;
-          background-repeat: no-repeat;
+          width: 80%;
+          border: 1px solid $color4;
           position: absolute;
-          width: 300px;
-          height: 300px;
-          top: -75px;
-          left: -125px;
-          z-index: -1;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+    a {
+      color: $color3;
+      font-family: $font-second;
+    }
+  }
+  &-photo {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
 
-        }
-        img {
-          width: 100%;
-          height: 100%;
-        }
+    .author-photo {
+      width: 400px;
+      height: 500px;
+      position: relative;
+      &:after {
+        content: '';
+        background-image: url("../img/cross.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: -75px;
+        left: -125px;
+        z-index: -1;
 
       }
-      .photo-sign{
-        font-family: $font-second;
-        width: 75%;
-        margin-top: 20px;
-
+      img {
+        width: 100%;
+        height: 100%;
       }
+
+    }
+    .photo-sign {
+      font-family: $font-second;
+      width: 75%;
+      margin-top: 20px;
+
     }
   }
 }
+
 
