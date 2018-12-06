@@ -10,6 +10,7 @@
     }
   }
   &-skills {
+    align-self: flex-start;
     font-family: $font-first;
     font-size: 15px;
     .skills-list {
@@ -34,10 +35,14 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+    padding-top: 30px;
+    @media screen and (min-width: 1030px){
+      padding-top: 0;
+    }
 
     .author-photo {
-      width: 400px;
-      height: 500px;
+      max-width: 400px;
+      max-height: 500px;
       position: relative;
       &:after {
         content: '';

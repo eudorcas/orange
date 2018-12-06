@@ -15,60 +15,93 @@
   position: relative;
   margin-bottom: 40px;
   h1 {
-    font-size: 150px;
+    font-family: $font-first;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 1px;
+    @media screen and (min-width: 500px) {
+      font-size: 70px;
+    }
+    @media screen and (min-width: 620px) {
+      font-size: 100px;
+    }
+    @media screen and (min-width: 850px) {
+      font-size: 150px;
+    }
     @media screen and (min-width: 1200px) {
       font-size: 200px;
-      font-family: $font-first;
-      font-weight: 400;
+
     }
   }
   p {
     margin: 5px;
-    font-size: 18px;
+    font-size: 12px;
     font-family: $font-second;
     font-weight: 400;
-  }
-
-}
-
-.page__navigation {
-  font-family: $font-second;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-
-}
-
-.navigation__menu {
-  display: flex;
-  justify-content: center;
-
-}
-
-.menu__element {
-  padding: 40px 30px 30px 30px;
-  margin: 10px;
-  a {
-    text-decoration: none;
-    color: $color2;
-    display: block;
-    position: relative;
-    &:after {
-      position: absolute;
-      content: '';
-      width: 0;
-      visibility: hidden;
-      border: 1px solid $color1;
-      bottom: -5px;
-      left: 0;
-      transition: 0.3s;
+    @media screen and (min-width: 500px){
+      font-size: 18px;
     }
-    &:hover:after {
+  }
+  .hamburger__menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .line {
       width: 100%;
-      visibility: visible;
+      border: 1px solid $color1;
     }
+    @media screen and (min-width: 620px){
+      display: none;
+    }
+
   }
 
+  .page__navigation {
+    font-family: $font-second;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+  }
+
+  .navigation__menu {
+    display: none;
+    @media screen and (min-width: 620px) {
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+  .menu__element {
+    padding: 40px 30px 30px 30px;
+    margin: 10px;
+    a {
+      text-decoration: none;
+      color: $color2;
+      display: block;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        visibility: hidden;
+        border: 1px solid $color1;
+        bottom: -5px;
+        left: 0;
+        transition: 0.3s;
+      }
+      &:hover:after {
+        width: 100%;
+        visibility: visible;
+      }
+    }
+  }
 }
 
 
