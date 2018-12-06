@@ -6,17 +6,26 @@
 .page__content {
   position: relative;
   .page__media-links {
-    position: absolute;
-    left: 0;
-    top: 150px;
+    text-align: center;
     a {
       padding: 5px;
     }
     img {
       width: 45px;
       height: 45px;
-      display: block;
+
     }
+    @media screen and (min-width: 1200px) {
+      position: fixed;
+      left: 0;
+      bottom: 200px;
+      img {
+        display: block;
+      }
+
+    }
+
+
   }
   &-header {
     font-family: $font-first;

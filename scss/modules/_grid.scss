@@ -15,8 +15,14 @@
         width: 100%;
         padding: 20px;
 
-        //TABLET +
-        @media screen and (min-width: 768px) {
+        //TABLET +:
+        @media screen and (min-width: 756px) {
+          padding: 10px;
+          width: (100%/12) * $i*2;
+        }
+
+        //DESKTOP
+        @media screen and (min-width: 1030px) {
           width: (100%/12) * $i;
           padding: 10px;
         }

@@ -15,9 +15,12 @@
   position: relative;
   margin-bottom: 40px;
   h1 {
-    font-size: 200px;
-    font-family: $font-first;
-    font-weight: 400;
+    font-size: 150px;
+    @media screen and (min-width: 1200px) {
+      font-size: 200px;
+      font-family: $font-first;
+      font-weight: 400;
+    }
   }
   p {
     margin: 5px;
@@ -34,7 +37,6 @@
   top: 0;
   z-index: 2;
 
-
 }
 
 .navigation__menu {
@@ -50,9 +52,9 @@
     text-decoration: none;
     color: $color2;
     display: block;
-    position:relative;
-    &:after{
-      position:absolute;
+    position: relative;
+    &:after {
+      position: absolute;
       content: '';
       width: 0;
       visibility: hidden;
