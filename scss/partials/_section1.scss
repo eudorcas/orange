@@ -36,7 +36,7 @@
     align-items: flex-end;
     flex-direction: column;
     padding-top: 30px;
-    @media screen and (min-width: 1030px){
+    @media #{$desktop}{
       padding-top: 0;
     }
 

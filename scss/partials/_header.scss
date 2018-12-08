@@ -7,10 +7,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  @include flex-center;
   color: $color1;
   position: relative;
   margin-bottom: 40px;
@@ -19,10 +16,10 @@
     font-weight: 400;
     font-size: 50px;
     letter-spacing: 1px;
-    @media screen and (min-width: 500px) {
+    @media #{$mobile-small} {
       font-size: 70px;
     }
-    @media screen and (min-width: 620px) {
+    @media #{$mobile} {
       font-size: 100px;
     }
     @media screen and (min-width: 850px) {
@@ -38,11 +35,12 @@
     font-size: 12px;
     font-family: $font-second;
     font-weight: 400;
-    @media screen and (min-width: 500px){
+    @media #{$mobile-small}{
       font-size: 18px;
     }
   }
   .hamburger__menu {
+    cursor: pointer;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -54,7 +52,7 @@
       background-color: $color1;
       transition: 0.5s;
     }
-    @media screen and (min-width: 620px){
+    @media #{$mobile}{
       display: none;
     }
 
@@ -80,7 +78,7 @@
     width: 0;
     height: 100vh;
     left: 0;
-    @media screen and (min-width: 620px) {
+    @media #{$mobile} {
       width: auto;
       left: auto;
     }
@@ -94,7 +92,7 @@
 
   .navigation__menu {
     display: none;
-    @media screen and (min-width: 620px) {
+    @media #{$mobile} {
       display: flex;
       justify-content: center;
     }

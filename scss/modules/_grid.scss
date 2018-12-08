@@ -18,14 +18,9 @@
         align-items: center;
         flex-direction: column;
 
-        ////TABLET
-        //@media screen and (min-width: 756px) {
-        //  padding: 10px;
-        //  width: (100%/12) * $i;
-        //}
 
         //DESKTOP
-        @media screen and (min-width: 1030px) {
+        @media #{$desktop} {
           width: (100%/12) * $i;
           padding: 10px;
           display: block;

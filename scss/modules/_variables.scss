@@ -6,3 +6,14 @@ $color2: #000;
 $color3: #ff4907;
 $color4: #dfdfdf;
 $color5: #f2f2f2;
+
+$mobile-small: screen and (min-width: 500px);
+$mobile: screen and (min-width: 620px);
+$desktop: screen and (min-width: 1030px);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

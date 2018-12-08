@@ -9,15 +9,19 @@
     text-align: center;
     a {
       padding: 5px;
+
     }
     img {
       width: 45px;
       height: 45px;
+      &:hover {
+        transform: scale(1.2);
+      }
 
     }
     @media screen and (min-width: 1200px) {
       position: fixed;
-      left: 0;
+      left: 5px;
       bottom: 200px;
       img {
         display: block;

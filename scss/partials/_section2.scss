@@ -7,7 +7,7 @@
   .img-chair {
     max-width: 400px;
     max-height: 600px;
-    @media screen and (min-width: 1030px) {
+    @media #{$desktop} {
       width: 350px;
       height: 550px;
     }
@@ -27,7 +27,7 @@
   }
   .projects {
     padding-left: 0;
-    @media screen and (min-width: 1030px) {
+    @media #{$desktop} {
       padding-left: 20px;
     }
   }

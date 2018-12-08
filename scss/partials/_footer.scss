@@ -3,12 +3,9 @@
   background-color: $color5;
   font-family: $font-second;
   line-height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex-center;
   font-size: 10px;
-  @media screen and (min-width: 500px) {
+  @media #{$mobile-small} {
     font-size: 14px;
   }
 
