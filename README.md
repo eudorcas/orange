@@ -6,6 +6,7 @@ Fully responsive page based on The Awwwesomes' design layout
 ### Used technologies:
 - HTML,
 - SASS,
-- JQuery.
+- JQuery,
+- Gulp.
 
 For more oustanding layouts please visit [The Awwwesomes](https://theawwwesomes.org).
